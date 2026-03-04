@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFuelToken" targetNamespace="http://tempuri.org/dsFuelToken.xsd" xmlns:mstns="http://tempuri.org/dsFuelToken.xsd" xmlns="http://tempuri.org/dsFuelToken.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFuelToken" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsFuelToken" msprop:Generator_UserDSName="dsFuelToken">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsFueltoken" msprop:Generator_TableClassName="dsFueltokenDataTable" msprop:Generator_TableVarName="tabledsFueltoken" msprop:Generator_RowChangedName="dsFueltokenRowChanged" msprop:Generator_TablePropName="dsFueltoken" msprop:Generator_RowDeletingName="dsFueltokenRowDeleting" msprop:Generator_RowChangingName="dsFueltokenRowChanging" msprop:Generator_RowEvHandlerName="dsFueltokenRowChangeEventHandler" msprop:Generator_RowDeletedName="dsFueltokenRowDeleted" msprop:Generator_RowClassName="dsFueltokenRow" msprop:Generator_UserTableName="dsFueltoken" msprop:Generator_RowEvArgName="dsFueltokenRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ASPTBLVEHTOKENID1" msprop:Generator_ColumnVarNameInTable="columnASPTBLVEHTOKENID1" msprop:Generator_ColumnPropNameInRow="ASPTBLVEHTOKENID1" msprop:Generator_ColumnPropNameInTable="ASPTBLVEHTOKENID1Column" msprop:Generator_UserColumnName="ASPTBLVEHTOKENID1" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPNAME" msprop:Generator_ColumnVarNameInTable="columnCOMPNAME" msprop:Generator_ColumnPropNameInRow="COMPNAME" msprop:Generator_ColumnPropNameInTable="COMPNAMEColumn" msprop:Generator_UserColumnName="COMPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CITYNAME" msprop:Generator_ColumnVarNameInTable="columnCITYNAME" msprop:Generator_ColumnPropNameInRow="CITYNAME" msprop:Generator_ColumnPropNameInTable="CITYNAMEColumn" msprop:Generator_UserColumnName="CITYNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PINCODE" msprop:Generator_ColumnVarNameInTable="columnPINCODE" msprop:Generator_ColumnPropNameInRow="PINCODE" msprop:Generator_ColumnPropNameInTable="PINCODEColumn" msprop:Generator_UserColumnName="PINCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOKENNO" msprop:Generator_ColumnVarNameInTable="columnTOKENNO" msprop:Generator_ColumnPropNameInRow="TOKENNO" msprop:Generator_ColumnPropNameInTable="TOKENNOColumn" msprop:Generator_UserColumnName="TOKENNO" type="xs:string" minOccurs="0" />
+              <xs:element name="TOKENDATE" msprop:Generator_ColumnVarNameInTable="columnTOKENDATE" msprop:Generator_ColumnPropNameInRow="TOKENDATE" msprop:Generator_ColumnPropNameInTable="TOKENDATEColumn" msprop:Generator_UserColumnName="TOKENDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="VEHICLENO" msprop:Generator_ColumnVarNameInTable="columnVEHICLENO" msprop:Generator_ColumnPropNameInRow="VEHICLENO" msprop:Generator_ColumnPropNameInTable="VEHICLENOColumn" msprop:Generator_UserColumnName="VEHICLENO" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPNAME" msprop:Generator_ColumnVarNameInTable="columnEMPNAME" msprop:Generator_ColumnPropNameInRow="EMPNAME" msprop:Generator_ColumnPropNameInTable="EMPNAMEColumn" msprop:Generator_UserColumnName="EMPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEMNAME" msprop:Generator_ColumnVarNameInTable="columnITEMNAME" msprop:Generator_ColumnPropNameInRow="ITEMNAME" msprop:Generator_ColumnPropNameInTable="ITEMNAMEColumn" msprop:Generator_UserColumnName="ITEMNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BUNKNAME" msprop:Generator_ColumnVarNameInTable="columnBUNKNAME" msprop:Generator_ColumnPropNameInRow="BUNKNAME" msprop:Generator_ColumnPropNameInTable="BUNKNAMEColumn" msprop:Generator_UserColumnName="BUNKNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="LITRES" msprop:Generator_ColumnVarNameInTable="columnLITRES" msprop:Generator_ColumnPropNameInRow="LITRES" msprop:Generator_ColumnPropNameInTable="LITRESColumn" msprop:Generator_UserColumnName="LITRES" type="xs:string" minOccurs="0" />
+              <xs:element name="KM" msprop:Generator_ColumnVarNameInTable="columnKM" msprop:Generator_ColumnPropNameInRow="KM" msprop:Generator_ColumnPropNameInTable="KMColumn" msprop:Generator_UserColumnName="KM" type="xs:string" minOccurs="0" />
+              <xs:element name="QRCODE" msprop:Generator_ColumnVarNameInTable="columnQRCODE" msprop:Generator_ColumnPropNameInRow="QRCODE" msprop:Generator_ColumnPropNameInTable="QRCODEColumn" msprop:Generator_UserColumnName="QRCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MIDCARD" msprop:Generator_ColumnVarNameInTable="columnMIDCARD" msprop:Generator_ColumnPropNameInRow="MIDCARD" msprop:Generator_ColumnPropNameInTable="MIDCARDColumn" msprop:Generator_UserColumnName="MIDCARD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

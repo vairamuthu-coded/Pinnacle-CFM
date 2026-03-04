@@ -1,0 +1,1672 @@
+﻿namespace Pinnacle.Hostel
+{
+    partial class GatePass
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GatePass));
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuRefreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit = new System.Windows.Forms.ToolStripButton();
+            this.TreeButtons = new System.Windows.Forms.ToolStripButton();
+            this.GlobalSearchs = new System.Windows.Forms.ToolStripButton();
+            this.Pdfs = new System.Windows.Forms.ToolStripButton();
+            this.Imports = new System.Windows.Forms.ToolStripButton();
+            this.Logins = new System.Windows.Forms.ToolStripButton();
+            this.DownLoads = new System.Windows.Forms.ToolStripButton();
+            this.ChangeSkins = new System.Windows.Forms.ToolStripButton();
+            this.ChangePasswords = new System.Windows.Forms.ToolStripButton();
+            this.Deletes = new System.Windows.Forms.ToolStripButton();
+            this.Searchs = new System.Windows.Forms.ToolStripButton();
+            this.Prints = new System.Windows.Forms.ToolStripButton();
+            this.Saves = new System.Windows.Forms.ToolStripButton();
+            this.News = new System.Windows.Forms.ToolStripButton();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.listViewRefreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reasonMasterRefreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtRemarks = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtmanualTime = new System.Windows.Forms.DateTimePicker();
+            this.pictureempimage = new System.Windows.Forms.PictureBox();
+            this.txtpermissionhrs = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panelprint = new System.Windows.Forms.Panel();
+            this.butprintcancel = new System.Windows.Forms.Button();
+            this.lblsecuritysing = new System.Windows.Forms.Label();
+            this.lblwardensign = new System.Windows.Forms.Label();
+            this.lblempsign = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rlblcompcode = new System.Windows.Forms.Label();
+            this.lblqrcode = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.butprint1 = new System.Windows.Forms.Button();
+            this.lblgatepass = new System.Windows.Forms.Label();
+            this.txthostelroom = new System.Windows.Forms.TextBox();
+            this.txthostelblock = new System.Windows.Forms.TextBox();
+            this.txtipaddress = new System.Windows.Forms.TextBox();
+            this.btnhostelsave = new System.Windows.Forms.Button();
+            this.comboreason = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.combohostelroom = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.combohostel = new System.Windows.Forms.ComboBox();
+            this.combohostelblock = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtdept = new System.Windows.Forms.TextBox();
+            this.txtempname = new System.Windows.Forms.TextBox();
+            this.txtcompcode = new System.Windows.Forms.TextBox();
+            this.lvLogs1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtoutime = new System.Windows.Forms.TextBox();
+            this.txtintime = new System.Windows.Forms.TextBox();
+            this.lbloutime = new System.Windows.Forms.Label();
+            this.lblintime = new System.Windows.Forms.Label();
+            this.comboempname = new System.Windows.Forms.ComboBox();
+            this.txtempid = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.combo_dept = new System.Windows.Forms.ComboBox();
+            this.combo_compcode = new System.Windows.Forms.ComboBox();
+            this.txtcontactno = new System.Windows.Forms.TextBox();
+            this.txtsystime = new System.Windows.Forms.TextBox();
+            this.txtsysdate = new System.Windows.Forms.TextBox();
+            this.txtidcardno = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lvLogs = new System.Windows.Forms.ListView();
+            this.lvLogsch1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvLogsch2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvLogsch4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvLogs5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label18 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblattcount = new System.Windows.Forms.Label();
+            this.butview = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txthostelgatesearch = new System.Windows.Forms.TextBox();
+            this.todate = new System.Windows.Forms.DateTimePicker();
+            this.frmdate = new System.Windows.Forms.DateTimePicker();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureempimage)).BeginInit();
+            this.panelprint.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.toolStrip1.ContextMenuStrip = this.contextMenuStrip2;
+            this.toolStrip1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Exit,
+            this.TreeButtons,
+            this.GlobalSearchs,
+            this.Pdfs,
+            this.Imports,
+            this.Logins,
+            this.DownLoads,
+            this.ChangeSkins,
+            this.ChangePasswords,
+            this.Deletes,
+            this.Searchs,
+            this.Prints,
+            this.Saves,
+            this.News});
+            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip1.Size = new System.Drawing.Size(1263, 25);
+            this.toolStrip1.TabIndex = 33;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuRefreshToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(148, 26);
+            // 
+            // menuRefreshToolStripMenuItem
+            // 
+            this.menuRefreshToolStripMenuItem.Name = "menuRefreshToolStripMenuItem";
+            this.menuRefreshToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.menuRefreshToolStripMenuItem.Text = "Menu Refresh";
+            this.menuRefreshToolStripMenuItem.Click += new System.EventHandler(this.MenuRefreshToolStripMenuItem_Click_1);
+            // 
+            // Exit
+            // 
+            this.Exit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Exit.ForeColor = System.Drawing.Color.White;
+            this.Exit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(36, 25);
+            this.Exit.Text = "Exit";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // TreeButtons
+            // 
+            this.TreeButtons.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.TreeButtons.ForeColor = System.Drawing.Color.White;
+            this.TreeButtons.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TreeButtons.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.TreeButtons.Name = "TreeButtons";
+            this.TreeButtons.Size = new System.Drawing.Size(81, 25);
+            this.TreeButtons.Text = "TreeButton";
+            // 
+            // GlobalSearchs
+            // 
+            this.GlobalSearchs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.GlobalSearchs.ForeColor = System.Drawing.Color.White;
+            this.GlobalSearchs.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.GlobalSearchs.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.GlobalSearchs.Name = "GlobalSearchs";
+            this.GlobalSearchs.Size = new System.Drawing.Size(99, 25);
+            this.GlobalSearchs.Text = "GlobalSearch";
+            // 
+            // Pdfs
+            // 
+            this.Pdfs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Pdfs.ForeColor = System.Drawing.Color.White;
+            this.Pdfs.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Pdfs.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Pdfs.Name = "Pdfs";
+            this.Pdfs.Size = new System.Drawing.Size(33, 25);
+            this.Pdfs.Text = "Pdf";
+            // 
+            // Imports
+            // 
+            this.Imports.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Imports.ForeColor = System.Drawing.Color.White;
+            this.Imports.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Imports.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Imports.Name = "Imports";
+            this.Imports.Size = new System.Drawing.Size(53, 25);
+            this.Imports.Text = "Import";
+            // 
+            // Logins
+            // 
+            this.Logins.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Logins.ForeColor = System.Drawing.Color.White;
+            this.Logins.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Logins.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Logins.Name = "Logins";
+            this.Logins.Size = new System.Drawing.Size(48, 25);
+            this.Logins.Text = "Login";
+            // 
+            // DownLoads
+            // 
+            this.DownLoads.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.DownLoads.ForeColor = System.Drawing.Color.White;
+            this.DownLoads.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DownLoads.Margin = new System.Windows.Forms.Padding(0);
+            this.DownLoads.Name = "DownLoads";
+            this.DownLoads.Size = new System.Drawing.Size(80, 25);
+            this.DownLoads.Text = "DownLoad";
+            // 
+            // ChangeSkins
+            // 
+            this.ChangeSkins.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ChangeSkins.ForeColor = System.Drawing.Color.White;
+            this.ChangeSkins.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ChangeSkins.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.ChangeSkins.Name = "ChangeSkins";
+            this.ChangeSkins.Size = new System.Drawing.Size(95, 25);
+            this.ChangeSkins.Text = "ChangeSkins";
+            // 
+            // ChangePasswords
+            // 
+            this.ChangePasswords.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ChangePasswords.ForeColor = System.Drawing.Color.White;
+            this.ChangePasswords.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ChangePasswords.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.ChangePasswords.Name = "ChangePasswords";
+            this.ChangePasswords.Size = new System.Drawing.Size(122, 25);
+            this.ChangePasswords.Text = "ChangePassword";
+            // 
+            // Deletes
+            // 
+            this.Deletes.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Deletes.ForeColor = System.Drawing.Color.White;
+            this.Deletes.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Deletes.Margin = new System.Windows.Forms.Padding(0);
+            this.Deletes.Name = "Deletes";
+            this.Deletes.Size = new System.Drawing.Size(53, 25);
+            this.Deletes.Text = "Delete";
+            // 
+            // Searchs
+            // 
+            this.Searchs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Searchs.ForeColor = System.Drawing.Color.White;
+            this.Searchs.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Searchs.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Searchs.Name = "Searchs";
+            this.Searchs.Size = new System.Drawing.Size(57, 25);
+            this.Searchs.Text = "Search";
+            // 
+            // Prints
+            // 
+            this.Prints.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Prints.ForeColor = System.Drawing.Color.White;
+            this.Prints.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Prints.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Prints.Name = "Prints";
+            this.Prints.Size = new System.Drawing.Size(42, 25);
+            this.Prints.Text = "Print";
+            this.Prints.Click += new System.EventHandler(this.Prints_Click);
+            // 
+            // Saves
+            // 
+            this.Saves.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.Saves.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Saves.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Saves.ForeColor = System.Drawing.Color.White;
+            this.Saves.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Saves.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.Saves.Name = "Saves";
+            this.Saves.Size = new System.Drawing.Size(44, 25);
+            this.Saves.Text = "Save";
+            this.Saves.Click += new System.EventHandler(this.Saves_Click);
+            // 
+            // News
+            // 
+            this.News.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.News.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.News.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.News.ForeColor = System.Drawing.Color.White;
+            this.News.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.News.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.News.Name = "News";
+            this.News.Size = new System.Drawing.Size(40, 25);
+            this.News.Text = "New";
+            this.News.Click += new System.EventHandler(this.News_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listViewRefreshToolStripMenuItem,
+            this.reasonMasterRefreshToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(194, 48);
+            // 
+            // listViewRefreshToolStripMenuItem
+            // 
+            this.listViewRefreshToolStripMenuItem.Name = "listViewRefreshToolStripMenuItem";
+            this.listViewRefreshToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.listViewRefreshToolStripMenuItem.Text = "ListView Refresh";
+            this.listViewRefreshToolStripMenuItem.Click += new System.EventHandler(this.ListViewRefreshToolStripMenuItem_Click);
+            // 
+            // reasonMasterRefreshToolStripMenuItem
+            // 
+            this.reasonMasterRefreshToolStripMenuItem.Name = "reasonMasterRefreshToolStripMenuItem";
+            this.reasonMasterRefreshToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.reasonMasterRefreshToolStripMenuItem.Text = "Reason Master Refresh";
+            this.reasonMasterRefreshToolStripMenuItem.Click += new System.EventHandler(this.ReasonMasterRefreshToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(12, 16);
+            this.label1.TabIndex = 34;
+            this.label1.Text = ".";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.tabControl1);
+            this.panel1.Location = new System.Drawing.Point(3, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1263, 481);
+            this.panel1.TabIndex = 35;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            this.tabControl1.ContextMenuStrip = this.contextMenuStrip2;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(5, 5);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.Padding = new System.Drawing.Point(6, 6);
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1253, 474);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.ContextMenuStrip = this.contextMenuStrip2;
+            this.tabPage1.Controls.Add(this.txtRemarks);
+            this.tabPage1.Controls.Add(this.label19);
+            this.tabPage1.Controls.Add(this.txtmanualTime);
+            this.tabPage1.Controls.Add(this.pictureempimage);
+            this.tabPage1.Controls.Add(this.txtpermissionhrs);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.panelprint);
+            this.tabPage1.Controls.Add(this.txthostelroom);
+            this.tabPage1.Controls.Add(this.txthostelblock);
+            this.tabPage1.Controls.Add(this.txtipaddress);
+            this.tabPage1.Controls.Add(this.btnhostelsave);
+            this.tabPage1.Controls.Add(this.comboreason);
+            this.tabPage1.Controls.Add(this.label16);
+            this.tabPage1.Controls.Add(this.label17);
+            this.tabPage1.Controls.Add(this.combohostelroom);
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Controls.Add(this.combohostel);
+            this.tabPage1.Controls.Add(this.combohostelblock);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.txtdept);
+            this.tabPage1.Controls.Add(this.txtempname);
+            this.tabPage1.Controls.Add(this.txtcompcode);
+            this.tabPage1.Controls.Add(this.lvLogs1);
+            this.tabPage1.Controls.Add(this.txtoutime);
+            this.tabPage1.Controls.Add(this.txtintime);
+            this.tabPage1.Controls.Add(this.lbloutime);
+            this.tabPage1.Controls.Add(this.lblintime);
+            this.tabPage1.Controls.Add(this.comboempname);
+            this.tabPage1.Controls.Add(this.txtempid);
+            this.tabPage1.Controls.Add(this.label11);
+            this.tabPage1.Controls.Add(this.pictureBox1);
+            this.tabPage1.Controls.Add(this.combo_dept);
+            this.tabPage1.Controls.Add(this.combo_compcode);
+            this.tabPage1.Controls.Add(this.txtcontactno);
+            this.tabPage1.Controls.Add(this.txtsystime);
+            this.tabPage1.Controls.Add(this.txtsysdate);
+            this.tabPage1.Controls.Add(this.txtidcardno);
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1245, 436);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "HostelGatePass";
+            // 
+            // txtRemarks
+            // 
+            this.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemarks.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRemarks.ForeColor = System.Drawing.Color.Navy;
+            this.txtRemarks.Location = new System.Drawing.Point(121, 315);
+            this.txtRemarks.Margin = new System.Windows.Forms.Padding(1);
+            this.txtRemarks.Multiline = true;
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(491, 34);
+            this.txtRemarks.TabIndex = 107;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(8, 308);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 16);
+            this.label19.TabIndex = 106;
+            this.label19.Text = "Remarks";
+            // 
+            // txtmanualTime
+            // 
+            this.txtmanualTime.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.txtmanualTime.CustomFormat = "hh:mm ";
+            this.txtmanualTime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmanualTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.txtmanualTime.Location = new System.Drawing.Point(502, 230);
+            this.txtmanualTime.Name = "txtmanualTime";
+            this.txtmanualTime.Size = new System.Drawing.Size(110, 22);
+            this.txtmanualTime.TabIndex = 104;
+            this.txtmanualTime.Value = new System.DateTime(2020, 12, 29, 0, 0, 0, 0);
+            // 
+            // pictureempimage
+            // 
+            this.pictureempimage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureempimage.Location = new System.Drawing.Point(733, 36);
+            this.pictureempimage.Name = "pictureempimage";
+            this.pictureempimage.Size = new System.Drawing.Size(493, 371);
+            this.pictureempimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureempimage.TabIndex = 103;
+            this.pictureempimage.TabStop = false;
+            this.pictureempimage.Click += new System.EventHandler(this.Pictureempimage_Click);
+            // 
+            // txtpermissionhrs
+            // 
+            this.txtpermissionhrs.CalendarFont = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpermissionhrs.CustomFormat = "hh:mm ";
+            this.txtpermissionhrs.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpermissionhrs.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtpermissionhrs.Location = new System.Drawing.Point(121, 287);
+            this.txtpermissionhrs.Name = "txtpermissionhrs";
+            this.txtpermissionhrs.Size = new System.Drawing.Size(81, 22);
+            this.txtpermissionhrs.TabIndex = 101;
+            this.txtpermissionhrs.Value = new System.DateTime(2020, 12, 28, 2, 0, 0, 0);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(387, 232);
+            this.label14.Margin = new System.Windows.Forms.Padding(0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(82, 16);
+            this.label14.TabIndex = 99;
+            this.label14.Text = "Manual Time";
+            // 
+            // panelprint
+            // 
+            this.panelprint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelprint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelprint.BackgroundImage")));
+            this.panelprint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelprint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelprint.Controls.Add(this.butprintcancel);
+            this.panelprint.Controls.Add(this.lblsecuritysing);
+            this.panelprint.Controls.Add(this.lblwardensign);
+            this.panelprint.Controls.Add(this.lblempsign);
+            this.panelprint.Controls.Add(this.button2);
+            this.panelprint.Controls.Add(this.button1);
+            this.panelprint.Controls.Add(this.rlblcompcode);
+            this.panelprint.Controls.Add(this.lblqrcode);
+            this.panelprint.Controls.Add(this.pictureBox2);
+            this.panelprint.Controls.Add(this.butprint1);
+            this.panelprint.Controls.Add(this.lblgatepass);
+            this.panelprint.Location = new System.Drawing.Point(530, 3);
+            this.panelprint.Margin = new System.Windows.Forms.Padding(5);
+            this.panelprint.Name = "panelprint";
+            this.panelprint.Size = new System.Drawing.Size(22, 34);
+            this.panelprint.TabIndex = 41;
+            // 
+            // butprintcancel
+            // 
+            this.butprintcancel.BackColor = System.Drawing.Color.Transparent;
+            this.butprintcancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.butprintcancel.FlatAppearance.BorderSize = 0;
+            this.butprintcancel.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.butprintcancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.butprintcancel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butprintcancel.ForeColor = System.Drawing.Color.Black;
+            this.butprintcancel.Location = new System.Drawing.Point(0, -23);
+            this.butprintcancel.Name = "butprintcancel";
+            this.butprintcancel.Padding = new System.Windows.Forms.Padding(5);
+            this.butprintcancel.Size = new System.Drawing.Size(20, 45);
+            this.butprintcancel.TabIndex = 74;
+            this.butprintcancel.Text = "Close";
+            this.butprintcancel.UseVisualStyleBackColor = false;
+            this.butprintcancel.Click += new System.EventHandler(this.butprintcancel_Click);
+            // 
+            // lblsecuritysing
+            // 
+            this.lblsecuritysing.AutoSize = true;
+            this.lblsecuritysing.BackColor = System.Drawing.Color.Transparent;
+            this.lblsecuritysing.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsecuritysing.ForeColor = System.Drawing.Color.Black;
+            this.lblsecuritysing.Location = new System.Drawing.Point(180, 275);
+            this.lblsecuritysing.Margin = new System.Windows.Forms.Padding(0);
+            this.lblsecuritysing.Name = "lblsecuritysing";
+            this.lblsecuritysing.Size = new System.Drawing.Size(74, 14);
+            this.lblsecuritysing.TabIndex = 73;
+            this.lblsecuritysing.Text = "Security  Sign";
+            // 
+            // lblwardensign
+            // 
+            this.lblwardensign.AutoSize = true;
+            this.lblwardensign.BackColor = System.Drawing.Color.Transparent;
+            this.lblwardensign.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblwardensign.ForeColor = System.Drawing.Color.Black;
+            this.lblwardensign.Location = new System.Drawing.Point(89, 275);
+            this.lblwardensign.Margin = new System.Windows.Forms.Padding(0);
+            this.lblwardensign.Name = "lblwardensign";
+            this.lblwardensign.Size = new System.Drawing.Size(69, 14);
+            this.lblwardensign.TabIndex = 72;
+            this.lblwardensign.Text = "Warden Sign";
+            // 
+            // lblempsign
+            // 
+            this.lblempsign.AutoSize = true;
+            this.lblempsign.BackColor = System.Drawing.Color.Transparent;
+            this.lblempsign.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblempsign.ForeColor = System.Drawing.Color.Black;
+            this.lblempsign.Location = new System.Drawing.Point(11, 275);
+            this.lblempsign.Margin = new System.Windows.Forms.Padding(0);
+            this.lblempsign.Name = "lblempsign";
+            this.lblempsign.Size = new System.Drawing.Size(51, 14);
+            this.lblempsign.TabIndex = 71;
+            this.lblempsign.Text = "Emp Sign";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Blue;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 14);
+            this.button2.TabIndex = 63;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(0, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(20, 10);
+            this.button1.TabIndex = 62;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // rlblcompcode
+            // 
+            this.rlblcompcode.AutoSize = true;
+            this.rlblcompcode.BackColor = System.Drawing.Color.Transparent;
+            this.rlblcompcode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rlblcompcode.ForeColor = System.Drawing.Color.Black;
+            this.rlblcompcode.Location = new System.Drawing.Point(11, 311);
+            this.rlblcompcode.Margin = new System.Windows.Forms.Padding(0);
+            this.rlblcompcode.Name = "rlblcompcode";
+            this.rlblcompcode.Size = new System.Drawing.Size(71, 14);
+            this.rlblcompcode.TabIndex = 61;
+            this.rlblcompcode.Text = "rlblcompcode";
+            this.rlblcompcode.Click += new System.EventHandler(this.Rlblcompcode_Click);
+            // 
+            // lblqrcode
+            // 
+            this.lblqrcode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblqrcode.AutoSize = true;
+            this.lblqrcode.BackColor = System.Drawing.Color.Transparent;
+            this.lblqrcode.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblqrcode.ForeColor = System.Drawing.Color.Black;
+            this.lblqrcode.Location = new System.Drawing.Point(0, 37);
+            this.lblqrcode.Margin = new System.Windows.Forms.Padding(0);
+            this.lblqrcode.Name = "lblqrcode";
+            this.lblqrcode.Size = new System.Drawing.Size(52, 13);
+            this.lblqrcode.TabIndex = 40;
+            this.lblqrcode.Text = "lblqrcode";
+            this.lblqrcode.Click += new System.EventHandler(this.Lblqrcode_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(-130, 70);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(123, 109);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 60;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+            // 
+            // butprint1
+            // 
+            this.butprint1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.butprint1.BackColor = System.Drawing.Color.Transparent;
+            this.butprint1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.butprint1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.butprint1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butprint1.ForeColor = System.Drawing.Color.Blue;
+            this.butprint1.Location = new System.Drawing.Point(92, -128);
+            this.butprint1.Name = "butprint1";
+            this.butprint1.Padding = new System.Windows.Forms.Padding(5);
+            this.butprint1.Size = new System.Drawing.Size(111, 45);
+            this.butprint1.TabIndex = 42;
+            this.butprint1.Text = "Print";
+            this.butprint1.UseVisualStyleBackColor = false;
+            this.butprint1.Visible = false;
+            this.butprint1.Click += new System.EventHandler(this.Butprint_Click);
+            // 
+            // lblgatepass
+            // 
+            this.lblgatepass.AutoSize = true;
+            this.lblgatepass.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgatepass.ForeColor = System.Drawing.Color.Navy;
+            this.lblgatepass.Location = new System.Drawing.Point(82, 16);
+            this.lblgatepass.Margin = new System.Windows.Forms.Padding(0);
+            this.lblgatepass.Name = "lblgatepass";
+            this.lblgatepass.Size = new System.Drawing.Size(74, 19);
+            this.lblgatepass.TabIndex = 41;
+            this.lblgatepass.Text = "Gate Pass";
+            this.lblgatepass.Click += new System.EventHandler(this.Lblgatepass_Click);
+            // 
+            // txthostelroom
+            // 
+            this.txthostelroom.Enabled = false;
+            this.txthostelroom.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthostelroom.ForeColor = System.Drawing.Color.Navy;
+            this.txthostelroom.Location = new System.Drawing.Point(452, 6);
+            this.txthostelroom.Margin = new System.Windows.Forms.Padding(1);
+            this.txthostelroom.Name = "txthostelroom";
+            this.txthostelroom.Size = new System.Drawing.Size(30, 21);
+            this.txthostelroom.TabIndex = 98;
+            this.txthostelroom.Text = "txthostelroom";
+            this.txthostelroom.Visible = false;
+            // 
+            // txthostelblock
+            // 
+            this.txthostelblock.Enabled = false;
+            this.txthostelblock.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthostelblock.ForeColor = System.Drawing.Color.Navy;
+            this.txthostelblock.Location = new System.Drawing.Point(420, 6);
+            this.txthostelblock.Margin = new System.Windows.Forms.Padding(1);
+            this.txthostelblock.Name = "txthostelblock";
+            this.txthostelblock.Size = new System.Drawing.Size(30, 21);
+            this.txthostelblock.TabIndex = 97;
+            this.txthostelblock.Text = "txthostelblock";
+            this.txthostelblock.Visible = false;
+            // 
+            // txtipaddress
+            // 
+            this.txtipaddress.Enabled = false;
+            this.txtipaddress.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtipaddress.ForeColor = System.Drawing.Color.Navy;
+            this.txtipaddress.Location = new System.Drawing.Point(374, 6);
+            this.txtipaddress.Margin = new System.Windows.Forms.Padding(1);
+            this.txtipaddress.Name = "txtipaddress";
+            this.txtipaddress.Size = new System.Drawing.Size(44, 21);
+            this.txtipaddress.TabIndex = 96;
+            this.txtipaddress.Text = "IPAddress";
+            this.txtipaddress.Visible = false;
+            // 
+            // btnhostelsave
+            // 
+            this.btnhostelsave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnhostelsave.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhostelsave.ForeColor = System.Drawing.Color.Black;
+            this.btnhostelsave.Location = new System.Drawing.Point(269, 353);
+            this.btnhostelsave.Name = "btnhostelsave";
+            this.btnhostelsave.Size = new System.Drawing.Size(181, 41);
+            this.btnhostelsave.TabIndex = 95;
+            this.btnhostelsave.Text = "Print";
+            this.btnhostelsave.UseVisualStyleBackColor = true;
+            this.btnhostelsave.Click += new System.EventHandler(this.Btnhostelsave_Click);
+            // 
+            // comboreason
+            // 
+            this.comboreason.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboreason.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboreason.ContextMenuStrip = this.contextMenuStrip1;
+            this.comboreason.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboreason.ForeColor = System.Drawing.Color.Navy;
+            this.comboreason.FormattingEnabled = true;
+            this.comboreason.Location = new System.Drawing.Point(121, 257);
+            this.comboreason.Margin = new System.Windows.Forms.Padding(0);
+            this.comboreason.Name = "comboreason";
+            this.comboreason.Size = new System.Drawing.Size(491, 24);
+            this.comboreason.TabIndex = 90;
+            this.comboreason.MouseHover += new System.EventHandler(this.Comboreason_MouseHover);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(8, 285);
+            this.label16.Margin = new System.Windows.Forms.Padding(0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(106, 16);
+            this.label16.TabIndex = 87;
+            this.label16.Text = "Permission Hrs *";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(8, 261);
+            this.label17.Margin = new System.Windows.Forms.Padding(0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 16);
+            this.label17.TabIndex = 86;
+            this.label17.Text = "Reason *";
+            // 
+            // combohostelroom
+            // 
+            this.combohostelroom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.combohostelroom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combohostelroom.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combohostelroom.ForeColor = System.Drawing.Color.Black;
+            this.combohostelroom.FormattingEnabled = true;
+            this.combohostelroom.Location = new System.Drawing.Point(121, 177);
+            this.combohostelroom.Margin = new System.Windows.Forms.Padding(0);
+            this.combohostelroom.Name = "combohostelroom";
+            this.combohostelroom.Size = new System.Drawing.Size(252, 24);
+            this.combohostelroom.TabIndex = 85;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(5, 180);
+            this.label15.Margin = new System.Windows.Forms.Padding(0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 16);
+            this.label15.TabIndex = 84;
+            this.label15.Text = "Text3 *";
+            // 
+            // combohostel
+            // 
+            this.combohostel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.combohostel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combohostel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combohostel.ForeColor = System.Drawing.Color.Black;
+            this.combohostel.FormattingEnabled = true;
+            this.combohostel.Location = new System.Drawing.Point(121, 120);
+            this.combohostel.Margin = new System.Windows.Forms.Padding(0);
+            this.combohostel.Name = "combohostel";
+            this.combohostel.Size = new System.Drawing.Size(252, 24);
+            this.combohostel.TabIndex = 83;
+            // 
+            // combohostelblock
+            // 
+            this.combohostelblock.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.combohostelblock.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combohostelblock.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combohostelblock.ForeColor = System.Drawing.Color.Black;
+            this.combohostelblock.FormattingEnabled = true;
+            this.combohostelblock.Location = new System.Drawing.Point(121, 149);
+            this.combohostelblock.Margin = new System.Windows.Forms.Padding(0);
+            this.combohostelblock.Name = "combohostelblock";
+            this.combohostelblock.Size = new System.Drawing.Size(252, 24);
+            this.combohostelblock.TabIndex = 82;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(5, 152);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 16);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "Text2 *";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(5, 123);
+            this.label13.Margin = new System.Windows.Forms.Padding(0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 16);
+            this.label13.TabIndex = 80;
+            this.label13.Text = "Text1 *";
+            // 
+            // txtdept
+            // 
+            this.txtdept.Enabled = false;
+            this.txtdept.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdept.ForeColor = System.Drawing.Color.Navy;
+            this.txtdept.Location = new System.Drawing.Point(484, 6);
+            this.txtdept.Margin = new System.Windows.Forms.Padding(1);
+            this.txtdept.Name = "txtdept";
+            this.txtdept.Size = new System.Drawing.Size(40, 21);
+            this.txtdept.TabIndex = 79;
+            this.txtdept.Text = "compcode";
+            this.txtdept.Visible = false;
+            // 
+            // txtempname
+            // 
+            this.txtempname.Enabled = false;
+            this.txtempname.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtempname.ForeColor = System.Drawing.Color.Navy;
+            this.txtempname.Location = new System.Drawing.Point(499, 6);
+            this.txtempname.Margin = new System.Windows.Forms.Padding(1);
+            this.txtempname.Name = "txtempname";
+            this.txtempname.Size = new System.Drawing.Size(25, 21);
+            this.txtempname.TabIndex = 78;
+            this.txtempname.Text = "compcode";
+            this.txtempname.Visible = false;
+            // 
+            // txtcompcode
+            // 
+            this.txtcompcode.Enabled = false;
+            this.txtcompcode.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcompcode.ForeColor = System.Drawing.Color.Navy;
+            this.txtcompcode.Location = new System.Drawing.Point(593, 11);
+            this.txtcompcode.Margin = new System.Windows.Forms.Padding(1);
+            this.txtcompcode.Name = "txtcompcode";
+            this.txtcompcode.Size = new System.Drawing.Size(19, 21);
+            this.txtcompcode.TabIndex = 77;
+            this.txtcompcode.Text = "compcode";
+            this.txtcompcode.Visible = false;
+            // 
+            // lvLogs1
+            // 
+            this.lvLogs1.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            this.lvLogs1.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.lvLogs1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvLogs1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.lvLogs1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvLogs1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.lvLogs1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvLogs1.ForeColor = System.Drawing.Color.Blue;
+            this.lvLogs1.FullRowSelect = true;
+            this.lvLogs1.GridLines = true;
+            this.lvLogs1.HideSelection = false;
+            this.lvLogs1.Location = new System.Drawing.Point(559, 3);
+            this.lvLogs1.Margin = new System.Windows.Forms.Padding(5);
+            this.lvLogs1.Name = "lvLogs1";
+            this.lvLogs1.ShowItemToolTips = true;
+            this.lvLogs1.Size = new System.Drawing.Size(19, 53);
+            this.lvLogs1.TabIndex = 76;
+            this.lvLogs1.UseCompatibleStateImageBehavior = false;
+            this.lvLogs1.View = System.Windows.Forms.View.Details;
+            this.lvLogs1.Visible = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Count";
+            this.columnHeader1.Width = 50;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "User ID";
+            this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "IP Address";
+            this.columnHeader3.Width = 0;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "In Out Mode";
+            this.columnHeader4.Width = 0;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Date Time";
+            this.columnHeader5.Width = 175;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Log Date";
+            this.columnHeader6.Width = 100;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Time";
+            this.columnHeader7.Width = 100;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "MacNo";
+            this.columnHeader8.Width = 0;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "In / Out";
+            this.columnHeader9.Width = 0;
+            // 
+            // txtoutime
+            // 
+            this.txtoutime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtoutime.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtoutime.ForeColor = System.Drawing.Color.Navy;
+            this.txtoutime.Location = new System.Drawing.Point(266, 287);
+            this.txtoutime.Margin = new System.Windows.Forms.Padding(1);
+            this.txtoutime.Name = "txtoutime";
+            this.txtoutime.Size = new System.Drawing.Size(120, 25);
+            this.txtoutime.TabIndex = 45;
+            // 
+            // txtintime
+            // 
+            this.txtintime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtintime.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtintime.ForeColor = System.Drawing.Color.Navy;
+            this.txtintime.Location = new System.Drawing.Point(493, 286);
+            this.txtintime.Margin = new System.Windows.Forms.Padding(1);
+            this.txtintime.Name = "txtintime";
+            this.txtintime.Size = new System.Drawing.Size(119, 25);
+            this.txtintime.TabIndex = 44;
+            // 
+            // lbloutime
+            // 
+            this.lbloutime.AutoSize = true;
+            this.lbloutime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloutime.ForeColor = System.Drawing.Color.Black;
+            this.lbloutime.Location = new System.Drawing.Point(203, 287);
+            this.lbloutime.Margin = new System.Windows.Forms.Padding(0);
+            this.lbloutime.Name = "lbloutime";
+            this.lbloutime.Size = new System.Drawing.Size(57, 16);
+            this.lbloutime.TabIndex = 43;
+            this.lbloutime.Text = "OutTime";
+            // 
+            // lblintime
+            // 
+            this.lblintime.AutoSize = true;
+            this.lblintime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblintime.ForeColor = System.Drawing.Color.Black;
+            this.lblintime.Location = new System.Drawing.Point(430, 289);
+            this.lblintime.Margin = new System.Windows.Forms.Padding(0);
+            this.lblintime.Name = "lblintime";
+            this.lblintime.Size = new System.Drawing.Size(46, 16);
+            this.lblintime.TabIndex = 42;
+            this.lblintime.Text = "InTime";
+            // 
+            // comboempname
+            // 
+            this.comboempname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboempname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboempname.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboempname.ForeColor = System.Drawing.Color.Black;
+            this.comboempname.FormattingEnabled = true;
+            this.comboempname.Location = new System.Drawing.Point(121, 65);
+            this.comboempname.Margin = new System.Windows.Forms.Padding(0);
+            this.comboempname.Name = "comboempname";
+            this.comboempname.Size = new System.Drawing.Size(252, 24);
+            this.comboempname.TabIndex = 39;
+            // 
+            // txtempid
+            // 
+            this.txtempid.BackColor = System.Drawing.Color.White;
+            this.txtempid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtempid.Enabled = false;
+            this.txtempid.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtempid.ForeColor = System.Drawing.Color.Black;
+            this.txtempid.Location = new System.Drawing.Point(121, 12);
+            this.txtempid.Margin = new System.Windows.Forms.Padding(1);
+            this.txtempid.Name = "txtempid";
+            this.txtempid.ReadOnly = true;
+            this.txtempid.Size = new System.Drawing.Size(100, 22);
+            this.txtempid.TabIndex = 38;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(4, 14);
+            this.label11.Margin = new System.Windows.Forms.Padding(0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 16);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "EmpID *";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(379, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
+            // combo_dept
+            // 
+            this.combo_dept.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.combo_dept.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_dept.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_dept.ForeColor = System.Drawing.Color.Black;
+            this.combo_dept.FormattingEnabled = true;
+            this.combo_dept.Location = new System.Drawing.Point(121, 92);
+            this.combo_dept.Margin = new System.Windows.Forms.Padding(0);
+            this.combo_dept.Name = "combo_dept";
+            this.combo_dept.Size = new System.Drawing.Size(252, 24);
+            this.combo_dept.TabIndex = 35;
+            // 
+            // combo_compcode
+            // 
+            this.combo_compcode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.combo_compcode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.combo_compcode.BackColor = System.Drawing.Color.White;
+            this.combo_compcode.Enabled = false;
+            this.combo_compcode.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_compcode.ForeColor = System.Drawing.Color.Black;
+            this.combo_compcode.FormattingEnabled = true;
+            this.combo_compcode.Location = new System.Drawing.Point(300, 11);
+            this.combo_compcode.Margin = new System.Windows.Forms.Padding(0);
+            this.combo_compcode.Name = "combo_compcode";
+            this.combo_compcode.Size = new System.Drawing.Size(73, 24);
+            this.combo_compcode.TabIndex = 34;
+            // 
+            // txtcontactno
+            // 
+            this.txtcontactno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcontactno.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontactno.ForeColor = System.Drawing.Color.Black;
+            this.txtcontactno.Location = new System.Drawing.Point(121, 204);
+            this.txtcontactno.Margin = new System.Windows.Forms.Padding(1);
+            this.txtcontactno.Name = "txtcontactno";
+            this.txtcontactno.Size = new System.Drawing.Size(252, 22);
+            this.txtcontactno.TabIndex = 33;
+            // 
+            // txtsystime
+            // 
+            this.txtsystime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsystime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsystime.ForeColor = System.Drawing.Color.Black;
+            this.txtsystime.Location = new System.Drawing.Point(282, 231);
+            this.txtsystime.Margin = new System.Windows.Forms.Padding(1);
+            this.txtsystime.Name = "txtsystime";
+            this.txtsystime.Size = new System.Drawing.Size(91, 22);
+            this.txtsystime.TabIndex = 32;
+            // 
+            // txtsysdate
+            // 
+            this.txtsysdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsysdate.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsysdate.ForeColor = System.Drawing.Color.Black;
+            this.txtsysdate.Location = new System.Drawing.Point(121, 230);
+            this.txtsysdate.Margin = new System.Windows.Forms.Padding(1);
+            this.txtsysdate.Name = "txtsysdate";
+            this.txtsysdate.Size = new System.Drawing.Size(100, 22);
+            this.txtsysdate.TabIndex = 31;
+            // 
+            // txtidcardno
+            // 
+            this.txtidcardno.BackColor = System.Drawing.Color.White;
+            this.txtidcardno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtidcardno.Enabled = false;
+            this.txtidcardno.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidcardno.ForeColor = System.Drawing.Color.Black;
+            this.txtidcardno.Location = new System.Drawing.Point(121, 39);
+            this.txtidcardno.Margin = new System.Windows.Forms.Padding(1);
+            this.txtidcardno.Name = "txtidcardno";
+            this.txtidcardno.ReadOnly = true;
+            this.txtidcardno.Size = new System.Drawing.Size(252, 22);
+            this.txtidcardno.TabIndex = 30;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(4, 95);
+            this.label8.Margin = new System.Windows.Forms.Padding(0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 16);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Department";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(222, 13);
+            this.label7.Margin = new System.Windows.Forms.Padding(0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 16);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "CompCode";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(5, 207);
+            this.label5.Margin = new System.Windows.Forms.Padding(0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 16);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Contact No";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(233, 234);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 16);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Time";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(5, 231);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 16);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "System Date";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(4, 67);
+            this.label6.Margin = new System.Windows.Forms.Padding(0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 16);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Emp Name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(4, 40);
+            this.label9.Margin = new System.Windows.Forms.Padding(0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 16);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "IDCardNo";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument1_PrintPage);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage2.Controls.Add(this.lvLogs);
+            this.tabPage2.Controls.Add(this.panel3);
+            this.tabPage2.Controls.Add(this.panel4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1245, 436);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Search";
+            // 
+            // lvLogs
+            // 
+            this.lvLogs.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.lvLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvLogs.BackColor = System.Drawing.Color.White;
+            this.lvLogs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvLogs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvLogsch1,
+            this.columnHeader16,
+            this.lvLogsch2,
+            this.lvLogsch4,
+            this.lvLogs5,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15});
+            this.lvLogs.ContextMenuStrip = this.contextMenuStrip1;
+            this.lvLogs.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvLogs.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lvLogs.FullRowSelect = true;
+            this.lvLogs.GridLines = true;
+            this.lvLogs.HideSelection = false;
+            this.lvLogs.Location = new System.Drawing.Point(10, 51);
+            this.lvLogs.Margin = new System.Windows.Forms.Padding(5);
+            this.lvLogs.Name = "lvLogs";
+            this.lvLogs.ShowItemToolTips = true;
+            this.lvLogs.Size = new System.Drawing.Size(1227, 346);
+            this.lvLogs.TabIndex = 80;
+            this.lvLogs.UseCompatibleStateImageBehavior = false;
+            this.lvLogs.View = System.Windows.Forms.View.Details;
+            // 
+            // lvLogsch1
+            // 
+            this.lvLogsch1.Text = "Sno";
+            this.lvLogsch1.Width = 50;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "ID";
+            this.columnHeader16.Width = 0;
+            // 
+            // lvLogsch2
+            // 
+            this.lvLogsch2.Text = "IDCardNo";
+            this.lvLogsch2.Width = 100;
+            // 
+            // lvLogsch4
+            // 
+            this.lvLogsch4.Text = "EmpName";
+            this.lvLogsch4.Width = 258;
+            // 
+            // lvLogs5
+            // 
+            this.lvLogs5.Text = "Department";
+            this.lvLogs5.Width = 160;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "HostelName";
+            this.columnHeader10.Width = 160;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "HostelBlock";
+            this.columnHeader11.Width = 0;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "HostelRoom";
+            this.columnHeader12.Width = 0;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "ContactNo";
+            this.columnHeader13.Width = 0;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Time";
+            this.columnHeader14.Width = 0;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Date";
+            this.columnHeader15.Width = 0;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(367, 8);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(49, 16);
+            this.label18.TabIndex = 89;
+            this.label18.Text = "Search";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(2, 6);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 16);
+            this.label10.TabIndex = 84;
+            this.label10.Text = "From Date";
+            // 
+            // lblattcount
+            // 
+            this.lblattcount.AutoSize = true;
+            this.lblattcount.BackColor = System.Drawing.Color.Transparent;
+            this.lblattcount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblattcount.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblattcount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblattcount.Location = new System.Drawing.Point(7, 0);
+            this.lblattcount.Margin = new System.Windows.Forms.Padding(0);
+            this.lblattcount.Name = "lblattcount";
+            this.lblattcount.Size = new System.Drawing.Size(43, 18);
+            this.lblattcount.TabIndex = 77;
+            this.lblattcount.Text = "Total";
+            // 
+            // butview
+            // 
+            this.butview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.butview.BackColor = System.Drawing.Color.Transparent;
+            this.butview.BackgroundImage = global::Pinnacle.Properties.Resources.Toolbar;
+            this.butview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.butview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butview.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butview.ForeColor = System.Drawing.Color.Black;
+            this.butview.Location = new System.Drawing.Point(1163, -5);
+            this.butview.Margin = new System.Windows.Forms.Padding(0);
+            this.butview.Name = "butview";
+            this.butview.Size = new System.Drawing.Size(71, 29);
+            this.butview.TabIndex = 80;
+            this.butview.Text = " View";
+            this.butview.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.butview.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(190, 7);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 16);
+            this.label12.TabIndex = 85;
+            this.label12.Text = "ToDate";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.butview);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.txthostelgatesearch);
+            this.panel3.Controls.Add(this.todate);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.frmdate);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(1);
+            this.panel3.Size = new System.Drawing.Size(1239, 38);
+            this.panel3.TabIndex = 81;
+            // 
+            // txthostelgatesearch
+            // 
+            this.txthostelgatesearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txthostelgatesearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txthostelgatesearch.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthostelgatesearch.ForeColor = System.Drawing.Color.Navy;
+            this.txthostelgatesearch.Location = new System.Drawing.Point(420, 4);
+            this.txthostelgatesearch.Margin = new System.Windows.Forms.Padding(1);
+            this.txthostelgatesearch.Name = "txthostelgatesearch";
+            this.txthostelgatesearch.Size = new System.Drawing.Size(731, 22);
+            this.txthostelgatesearch.TabIndex = 88;
+            // 
+            // todate
+            // 
+            this.todate.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.todate.Location = new System.Drawing.Point(261, 5);
+            this.todate.Name = "todate";
+            this.todate.Size = new System.Drawing.Size(100, 20);
+            this.todate.TabIndex = 87;
+            this.todate.Value = new System.DateTime(2020, 12, 25, 18, 2, 0, 0);
+            // 
+            // frmdate
+            // 
+            this.frmdate.CalendarFont = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmdate.CalendarForeColor = System.Drawing.Color.RoyalBlue;
+            this.frmdate.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.frmdate.Location = new System.Drawing.Point(89, 4);
+            this.frmdate.MinDate = new System.DateTime(2020, 5, 1, 0, 0, 0, 0);
+            this.frmdate.Name = "frmdate";
+            this.frmdate.Size = new System.Drawing.Size(95, 22);
+            this.frmdate.TabIndex = 86;
+            this.frmdate.Value = new System.DateTime(2020, 12, 25, 15, 33, 0, 0);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.lblattcount);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(3, 402);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1239, 31);
+            this.panel4.TabIndex = 82;
+            // 
+            // GatePass
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(1269, 518);
+            this.ContextMenuStrip = this.contextMenuStrip2;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.toolStrip1);
+            this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "GatePass";
+            this.Padding = new System.Windows.Forms.Padding(3);
+            this.Text = "HostelGatePass";
+            this.Load += new System.EventHandler(this.HostelGatePass_Load);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.contextMenuStrip2.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureempimage)).EndInit();
+            this.panelprint.ResumeLayout(false);
+            this.panelprint.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton Exit;
+        private System.Windows.Forms.ToolStripButton TreeButtons;
+        private System.Windows.Forms.ToolStripButton GlobalSearchs;
+        private System.Windows.Forms.ToolStripButton Logins;
+        private System.Windows.Forms.ToolStripButton ChangePasswords;
+        private System.Windows.Forms.ToolStripButton ChangeSkins;
+        private System.Windows.Forms.ToolStripButton DownLoads;
+        private System.Windows.Forms.ToolStripButton Pdfs;
+        private System.Windows.Forms.ToolStripButton Imports;
+        private System.Windows.Forms.ToolStripButton Deletes;
+        private System.Windows.Forms.ToolStripButton Searchs;
+        private System.Windows.Forms.ToolStripButton Prints;
+        private System.Windows.Forms.ToolStripButton Saves;
+        private System.Windows.Forms.ToolStripButton News;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox combo_dept;
+        private System.Windows.Forms.ComboBox combo_compcode;
+        private System.Windows.Forms.TextBox txtcontactno;
+        private System.Windows.Forms.TextBox txtsystime;
+        private System.Windows.Forms.TextBox txtsysdate;
+        private System.Windows.Forms.TextBox txtidcardno;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtempid;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboempname;
+        private System.Windows.Forms.Label lblqrcode;
+        private System.Windows.Forms.Panel panelprint;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button butprint1;
+        private System.Windows.Forms.Label lblgatepass;
+        private System.Windows.Forms.Label rlblcompcode;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.TextBox txtoutime;
+        private System.Windows.Forms.TextBox txtintime;
+        private System.Windows.Forms.Label lbloutime;
+        private System.Windows.Forms.Label lblintime;
+        private System.Windows.Forms.ListView lvLogs1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.TextBox txtdept;
+        private System.Windows.Forms.TextBox txtempname;
+        private System.Windows.Forms.TextBox txtcompcode;
+        private System.Windows.Forms.ComboBox comboreason;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox combohostelroom;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox combohostel;
+        private System.Windows.Forms.ComboBox combohostelblock;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button btnhostelsave;
+        private System.Windows.Forms.TextBox txtipaddress;
+        private System.Windows.Forms.TextBox txthostelroom;
+        private System.Windows.Forms.TextBox txthostelblock;
+        private System.Windows.Forms.ToolStripMenuItem listViewRefreshToolStripMenuItem;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker txtpermissionhrs;
+        private System.Windows.Forms.DateTimePicker txtmanualTime;
+        private System.Windows.Forms.PictureBox pictureempimage;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem reasonMasterRefreshToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuRefreshToolStripMenuItem;
+        private System.Windows.Forms.Label lblsecuritysing;
+        private System.Windows.Forms.Label lblwardensign;
+        private System.Windows.Forms.Label lblempsign;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button butprintcancel;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtRemarks;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ListView lvLogs;
+        private System.Windows.Forms.ColumnHeader lvLogsch1;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader lvLogsch2;
+        private System.Windows.Forms.ColumnHeader lvLogsch4;
+        private System.Windows.Forms.ColumnHeader lvLogs5;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button butview;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txthostelgatesearch;
+        private System.Windows.Forms.DateTimePicker todate;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker frmdate;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblattcount;
+    }
+}

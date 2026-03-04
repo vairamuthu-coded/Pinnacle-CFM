@@ -1,0 +1,411 @@
+﻿CREATE TABLE pltempotdays (
+  idcard varchar(50) DEFAULT NULL,
+  totwdays decimal(15,2) DEFAULT '0.00',
+  useddays int NOT NULL DEFAULT '0',
+  payperiod varchar(50) DEFAULT '0.00',
+  ot decimal(15,2) DEFAULT '0.00',
+  uot int NOT NULL DEFAULT '0',
+  uot1 int NOT NULL DEFAULT '0',
+  wid int NOT NULL DEFAULT '0'
+);
+
+drop procedure timecardprocess;
+
+
+
+delimiter //
+CREATE procedure  timecardprocess(
+    p_payperiod    VARCHAR(250),
+    p_unit    VARCHAR(250),
+    p_idseq    VARCHAR(250),
+    p_typename VARCHAR(250)
+    )
+BEGIN	
+	
+		DECLARE salup_done1,salup_done,salupp_done,salupd_done1,salupd_done,saluppd_done,sal_upd INT DEFAULT 0;
+    	DECLARE v_ssp,v_empidp,v_ss,v_empid,v_ss2,v_ss4,v1_ss,v1_empid,v1_wid,v_sspd,v_empidpd,v_empidd,v_ss2d,v_ss4d,v1_ssd,v1_empidd,v1_widd,v_ssd VARCHAR(2500);
+		   
+		DECLARE  sal_up CURSOR  FOR
+		select case when DATE_FORMAT(c.docdate, "%M %Y") <> DATE_FORMAT(c.doj, "%M %Y") then CONCAT('update pldattabk aa join pltempdays bb on aa.empid = bb.idcard and aa.payperiod = bb.payperiod  set aa.shiftcnt = 
+		case when (bb.totwdays-bb.useddays) > 0 and ifnull(aa.intime,',char(39),'null',char(39),') = ',char(39),'null',char(39),' then ',
+		case when (d.totwdays-d.useddays) > 0 then case when (d.totwdays - d.useddays) > 1 then 
+		'case when (bb.totwdays-bb.useddays) > 1 then 1 else (bb.totwdays-bb.useddays) end' else (d.totwdays - d.useddays) end  else 0 end,
+		' else 0 end where  day(aa.docdate) = ',char(39),b.suftime,char(39),' and monthname(aa.docdate) = ',char(39),a.month,char(39),' 
+		and aa.empid = ',char(39),c.empid,char(39)) else 
+		CONCAT('update pldattabk aa join pltempdays bb on aa.empid = bb.idcard and aa.payperiod = bb.payperiod  set aa.shiftcnt = 
+		case when (bb.totwdays-bb.useddays) > 0 and ifnull(aa.intime,',char(39),'null',char(39),') = ',char(39),'null',char(39),' then ',
+		case when (d.totwdays-d.useddays) > 0 then case when (d.totwdays - d.useddays) > 1 then 
+		'case when (bb.totwdays-bb.useddays) > 1 then 1 else (bb.totwdays-bb.useddays) end' else (d.totwdays - d.useddays) end  else 0 end,
+		' else 0 end where day(aa.docdate) = ',char(39),day(c.docdate),char(39),' and monthname(aa.docdate) = ',char(39),a.month,char(39),' 
+		and aa.empid = ',char(39),c.empid,char(39))
+		end ss,c.empid from hrdayshf a
+		join hrdayshfdet b on a.hrdayshfid = b.hrdayshfid 
+		join (
+		SELECT a.empid,day(a.docdate) ddate,monthname(a.docdate) smonth,ifnull(a.shiftcnt,0) shiftcnt,a.docdate,a.doj from pldattabk a 
+		where a.payperiod  = p_payperiod and ifnull(a.shiftcnt,0) = 0 and a.intime is null 
+		) c on a.month  = c.smonth and b.ddate = c.ddate
+		join pltempdays d on c.empid = d.idcard 
+		where (d.totwdays-d.useddays) > 0  and b.suftime not in (
+		SELECT distinct DAY(z.docdate) ss from pldattabk z where z.payperiod = p_payperiod and z.intime in ('WO','NH') 
+		)
+		ORDER by CAST(c.empid as DECIMAL);
+	
+		DECLARE  sal_upp CURSOR  for
+		select case when DATE_FORMAT(a.docdate, "%M %Y") <> DATE_FORMAT(a.doj, "%M %Y") then 
+		CONCAT('update pldattabk aa join pltempdays bb on aa.empid = bb.idcard and aa.payperiod = bb.payperiod  set aa.shiftcnt = 
+		case when (bb.totwdays-bb.useddays) > 0 and ifnull(aa.intime,',char(39),'null',char(39),') = ',char(39),'null',char(39),' then ',
+		case when (d.totwdays-d.useddays) > 0 then case when (d.totwdays - d.useddays) > 1 then 
+		'case when (bb.totwdays-bb.useddays) > 1 then 1 else (bb.totwdays-bb.useddays) end' else (d.totwdays - d.useddays) end  else 0 end,
+		' else 0 end where day(aa.docdate) = ',char(39),a.ddate,char(39),' 
+        and aa.empid = ',char(39),a.empid,char(39)) else 
+        CONCAT('update pldattabk aa join pltempdays bb on aa.empid = bb.idcard and aa.payperiod = bb.payperiod  set aa.shiftcnt = 
+		case when (bb.totwdays-bb.useddays) > 0 and ifnull(aa.intime,',char(39),'null',char(39),') = ',char(39),'null',char(39),' then ',
+		case when (d.totwdays-d.useddays) > 0 then case when (d.totwdays - d.useddays) > 1 then 
+		'case when (bb.totwdays-bb.useddays) > 1 then 1 else (bb.totwdays-bb.useddays) end' else (d.totwdays - d.useddays) end  else 0 end,
+		' else 0 end where day(aa.docdate) = ',char(39),day(a.docdate),char(39),' 
+        and aa.empid = ',char(39),a.empid,char(39))
+        end ss,a.empid from (
+		SELECT a.empid,day(a.docdate) ddate,ifnull(a.shiftcnt,0) shiftcnt,a.docdate,a.doj,
+		case when mod(substr(a.payperiod,1,2),2) = 0 then dense_rank() over(partition by a.deptname,a.empid order by day(a.docdate)) 
+		else case when mod(substr(a.payperiod,1,2),3) = 0 then dense_rank() over(partition by a.designation order by day(a.docdate) desc) else
+		dense_rank() over(partition by a.deptname order by day(a.docdate) desc) end end orderby from pldattabk a 
+		where a.payperiod  = p_payperiod  and ifnull(a.shiftcnt,0) = 0 and a.intime is null  
+		) a 
+		join pltempdays d on a.empid = d.idcard 
+		where  (d.totwdays-d.useddays) > 0  and 
+		a.ddate not in (
+		SELECT distinct DAY(z.docdate) ss from pldattabk z where z.payperiod = p_payperiod and z.intime in ('WO','NH') 
+		) and a.intime is null 
+		order by a.orderby;	
+	
+	DECLARE  sal_up1 CURSOR  FOR
+		select CONCAT('update pldattabk aa join pltempotdays bb on aa.empid = bb.idcard and aa.wid = bb.wid and aa.payperiod = bb.payperiod  set aa.ot = 
+		case when (bb.ot-bb.uot) > 2 and aa.shiftcnt = 1  then case when ifnull(bb.uot1,0) < 6 then ',
+		case when (dd.ot - dd.uot) > 2 then 2 else (dd.ot - dd.uot) end,
+		' else 0 end else (bb.ot-bb.uot) end where day(aa.docdate) = ',char(39),day(c.docdate),char(39),' and monthname(aa.docdate) = ',char(39),a.month,char(39),' 
+		and aa.empid = ',char(39),c.empid,char(39)) ss,c.empid,c.wid from hrdayshf a
+		join hrdayshfdet b on a.hrdayshfid = b.hrdayshfid 
+		join (
+		SELECT a.empid,day(a.docdate) ddate,monthname(a.docdate) smonth,ifnull(a.shiftcnt,0) shiftcnt,a.wid,a.docdate from pldattabk a 
+		where a.payperiod  = p_payperiod and a.shiftcnt = 1 and ifnull(a.ot,0) = 0
+		) c on a.month = c.smonth and b.ddate = c.ddate
+		join pltempotdays dd on c.empid = dd.idcard and dd.wid = c.wid and ifnull(dd.uot1,0) < 6 and (dd.ot-dd.uot) > 0
+		ORDER by CAST(c.empid as decimal),c.ddate;
+		
+	
+	begin
+		
+		DELETE FROM imp;
+
+		DELETE FROM pldattabk;
+	
+	    DELETE FROM pldatta where payperiod = p_payperiod and compcode = p_unit and idseq = p_idseq;
+	
+		DELETE FROM pltempdays;
+	
+	    DELETE FROM pltempotdays;
+	
+		DELETE FROM plbsddatta;	
+	
+		INSERT INTO imp (SELECT '1.Delete Completed' FROM DUAL);
+	
+		INSERT pldattabk ( compcode,empid,docdate,payperiod,typee,deptname,designation,shift,idseq,doj,intime,outtime ) (
+	    select p_unit compcode,b.idcard empid,a.docdate,b.payperiod,b.cat ,b.dept ,b.desig,'GEN' shift,b.idseq,b.doj,
+	    case when a.docdate < b.doj then '-' else null end intime,case when a.docdate < b.doj then '-' else null end outtime  from (
+		WITH RECURSIVE cte_connect_by AS (
+	     SELECT (	     
+	     select DISTINCT DATE_FORMAT(STR_TO_DATE(a.fromdate,'%d-%b-%Y'),'%Y-%m-%d') from hrpaydetails a where a.payperiod = p_payperiod ) AS level,0 level1
+	     UNION ALL
+	     SELECT DATE_ADD(level, INTERVAL 1 DAY)  AS level,level1 + 1 FROM cte_connect_by 
+	     WHERE level1 < TIMESTAMPDIFF(DAY, (select DISTINCT DATE_FORMAT(STR_TO_DATE(a.fromdate,'%d-%b-%Y'),'%Y-%m-%d') from hrpaydetails a where a.payperiod = p_payperiod ), (select DISTINCT DATE_FORMAT(STR_TO_DATE(a.todate,'%d-%b-%Y'),'%Y-%m-%d') from hrpaydetails a where a.payperiod = p_payperiod) )     
+	     )
+	  	SELECT date(level) docdate
+	  	FROM cte_connect_by
+	  	) a cross join (	  	
+	  	select * from ( 
+	  	select a.idcard,a.payperiod,a.cat ,a.dept ,a.desig,(select aa.idseq from idseqtable aa 
+	  	where a.idseq between aa.fromid and aa.toid) idseq,a.doj from 
+	  	(select DISTINCT a.idcardno idcard,a.payperiod,a.category cat ,a.department dept ,a.designation desig,
+	  	dense_rank() over(order by a.idcardno ) idseq,a.doj from hrpaydetails a where a.payperiod  = p_payperiod 
+	  	and a.united = p_unit
+	  	) a	 
+	  	) a where a.idseq = p_idseq	  	
+	  	) b 
+	  	order by 1,2	  	
+		);
+	
+		INSERT INTO imp (SELECT '2.Pl Data Insert' FROM DUAL);
+	
+		UPDATE pldattabk a set a.outtime = 'NH', a.intime = 'NH' where a.docdate in (	
+		select distinct a.nhdate from hrnhdetails a		
+		join hrnhmast b on a.hrnhmastid = b.hrnhmastid
+		join gtcompmast c on b.compcode  = c.gtcompmastid
+		where c.compcode = p_unit
+	    ) and a.payperiod  = p_payperiod and a.intime is null;
+	   
+	    INSERT INTO imp (SELECT '4.NH Updated' FROM DUAL);   
+	
+		UPDATE pldattabk a set a.outtime = 'WO', a.intime = 'WO' where DAYNAME(a.docdate) = 'Sunday' and a.payperiod  = p_payperiod and a.intime is null;
+	
+		INSERT INTO imp (SELECT '3.WO Updated' FROM DUAL);  	
+        
+        /* update pldattabk aa set aa.wid = ceiling((day(aa.docdate) - 
+		(6 - weekday(date_format(aa.docdate,'%Y-%m-01'))))/7) 
+		+ case when 6 - weekday(date_format(aa.docdate,'%Y-%m-01'))> 0 
+		then 1 else 0 end where aa.payperiod  = p_payperiod; */
+	
+		update pldattabk aa set aa.wid = 1 where day(aa.docdate) between 1 and 8;	
+	    
+	    update pldattabk aa set aa.wid = 2 where day(aa.docdate) between 9 and 16;
+	   
+	   	update pldattabk aa set aa.wid = 3 where day(aa.docdate) between 17 and 24;
+	   
+	    update pldattabk aa set aa.wid = 4 where day(aa.docdate) between 25 and 31;
+	
+		INSERT into pltempdays (idcard,totwdays,useddays,payperiod,ot,uot)
+		(		
+		select DISTINCT a.idcardno idcard,a.orjpayabledays payabledays ,0 useddays,a.payperiod,a.payableothrs payableothrs,0 uot from hrpaydetails a 
+		where a.payperiod  = p_payperiod and a.united = p_unit and a.idcardno in ( select aa.empid from pldattabk aa where aa.payperiod  = p_payperiod)	
+		);
+	
+		INSERT into pltempotdays (idcard,totwdays,useddays,payperiod,ot,uot,uot1,wid)
+		(		
+		select DISTINCT a.idcardno idcard,a.orjpayabledays payabledays ,0 useddays,a.payperiod,
+		case when a.payableothrs >= 6 then 6 else 0 end payableothrs,0 uot,0 uot1,1 wid from hrpaydetails a 
+		where a.payperiod  = p_payperiod and a.united = p_unit and a.idcardno in ( select aa.empid from pldattabk aa where aa.payperiod  = p_payperiod)	
+		union all 
+		select DISTINCT a.idcardno idcard,a.orjpayabledays payabledays ,0 useddays,a.payperiod,
+		case when a.payableothrs >= 18 then 6 else case when a.payableothrs between 13 and 17 then (a.payableothrs-12) else 0 end end payableothrs,0 uot,0 uot1,2 wid from hrpaydetails a 
+		where a.payperiod  = p_payperiod and a.united = p_unit and a.idcardno in ( select aa.empid from pldattabk aa where aa.payperiod  = p_payperiod)	
+		union all
+		select DISTINCT a.idcardno idcard,a.orjpayabledays payabledays ,0 useddays,a.payperiod,
+		case when a.payableothrs >= 24 then 6 else case when a.payableothrs between 19 and 23 then (a.payableothrs-18) else 0 end end payableothrs,0 uot,0 uot1,3 wid from hrpaydetails a 
+		where a.payperiod  = p_payperiod and a.united = p_unit and a.idcardno in ( select aa.empid from pldattabk aa where aa.payperiod  = p_payperiod)	
+		union all 
+		select DISTINCT a.idcardno idcard,a.orjpayabledays payabledays ,0 useddays,a.payperiod,
+		case when a.payableothrs >= 12 then 6 else case when a.payableothrs between 7 and 11 then (a.payableothrs-6) else 0 end end payableothrs,0 uot,0 uot1,4 wid from hrpaydetails a 
+		where a.payperiod  = p_payperiod and a.united = p_unit and a.idcardno in ( select aa.empid from pldattabk aa where aa.payperiod  = p_payperiod)	
+		);
+	
+		INSERT INTO imp (SELECT '5.pltempdays' FROM DUAL);
+
+		COMMIT;
+		
+	end;
+
+	IF p_typename = 'Weekly' then
+	
+	BEGIN
+		
+     DECLARE CONTINUE HANDLER FOR NOT FOUND SET salupp_done = 1;           
+     OPEN sal_upp;
+     salp:LOOP
+          FETCH sal_upp INTO v_ssp,v_empidp;
+            IF salupp_done = 1 THEN
+            	LEAVE salp;
+	        END IF;
+	        set @v_ssp2 = v_ssp; 
+            PREPARE stmtSelect3 FROM @v_ssp2;
+			EXECUTE stmtSelect3;
+		
+			DEALLOCATE PREPARE stmtSelect3;
+		
+		update pltempdays a set a.useddays = ( a.useddays + case when (a.totwdays - a.useddays) > 1 
+			then 1 else (a.totwdays - a.useddays) end) where a.payperiod = p_payperiod and a.idcard = v_empidp;
+		
+          COMMIT;   
+     END loop salp;      
+     CLOSE sal_upp;    
+     END;
+    
+       
+    
+	
+	ELSE
+
+		BEGIN
+		
+     DECLARE CONTINUE HANDLER FOR NOT FOUND SET salup_done = 1;           
+     OPEN sal_up;
+     sal:LOOP
+          FETCH sal_up INTO v_ss,v_empid;
+            IF salup_done = 1 THEN
+            	LEAVE sal;
+	        END IF;
+	        set @v_ss2 = v_ss; 
+            PREPARE stmtSelect2 FROM @v_ss2;
+			EXECUTE stmtSelect2;
+		
+			DEALLOCATE PREPARE stmtSelect2;
+		
+		update pltempdays a set a.useddays = ( a.useddays + case when (a.totwdays - a.useddays) > 1 
+			then 1 else (a.totwdays - a.useddays) end) where a.payperiod = p_payperiod and a.idcard = v_empid;
+		
+          COMMIT;   
+     END loop sal;      
+     CLOSE sal_up;    
+     END;
+    
+    
+    
+    end if;
+   
+   BEGIN
+		
+     DECLARE CONTINUE HANDLER FOR NOT FOUND SET salup_done1 = 1;           
+     OPEN sal_up1;
+     sal1:LOOP
+          FETCH sal_up1 INTO v1_ss,v1_empid,v1_wid;
+            IF salup_done1 = 1 THEN
+            	LEAVE sal1;
+	        END IF;
+	       set @v_ss4 = v1_ss;
+            PREPARE stmtSelect3 FROM @v_ss4;
+			EXECUTE stmtSelect3;
+			DEALLOCATE PREPARE stmtSelect3;
+		
+			update pltempdays a set a.uot = a.uot + ( case when (a.ot - a.uot) > 2  then 2 else (a.ot - a.uot) end )  
+           where a.payperiod = p_payperiod and a.idcard = v1_empid;
+          
+          update pltempotdays a set a.uot = a.uot + ( case when (a.ot - a.uot) > 2  then 2 else (a.ot - a.uot) end )  
+           where a.payperiod = p_payperiod and a.idcard = v1_empid and a.wid = v1_wid;
+          
+          update pltempotdays a set a.uot1 = a.uot1 + ( case when (a.ot - a.uot) > 2  then case when a.uot1 < 6 then 2 else 0 end else (a.ot - a.uot) end )  
+           where a.payperiod = p_payperiod and a.idcard = v1_empid and a.wid = v1_wid;
+                    
+          COMMIT;
+                    
+     END LOOP sal1;
+                    
+     CLOSE sal_up1;
+     
+     COMMIT;          
+     END;
+   
+    BEGIN
+	    
+	    UPDATE pldattabk aa set aa.q1 = 2,aa.q2 = 2,aa.q3 = 2,aa.q4 = 2 where aa.shiftcnt = 1;
+	    
+	    UPDATE pldattabk aa set aa.q1 = 2,aa.q2 = 2,aa.q3 = 2,aa.q4 = 0 where aa.shiftcnt = 0.75;
+	    
+	    UPDATE pldattabk aa set aa.q1 = 2,aa.q2 = 2,aa.q3 = 0,aa.q4 = 0 where aa.shiftcnt = 0.5;
+	    
+	    UPDATE pldattabk aa set aa.q1 = 2,aa.q2 = 0,aa.q3 = 0,aa.q4 = 0 where aa.shiftcnt = 0.25;
+	    
+	    commit;
+	   
+	   insert into plbsddatta (compcode,typee,empmaid,empid,docdate,indt,intime,outdt ,outtime,otindate,otintime,otoutdate,otouttime)
+        (        
+        select distinct aa.compcode,aa.typee,aa.empmaid,aa.empid,aa.docdate,
+        date(aa.indate) indate,
+        aa.intime,date(aa.outdate) outdate ,aa.outtime,date(aa.otindate) otindate,aa.otintime,date(aa.otoutdate) otoutdate,aa.otouttime from
+        (select aa.compcode,aa.typee,aa.empmaid,aa.empid,aa.docdate,aa.indt indate,
+        CONVERT(aa.indt,time) intime,
+        aa.indt indt,
+        aa.outdt outdate ,CONVERT(aa.outdt,time) outtime,
+        aa.outdt outdt,aa.otindt otindate,aa.otoutdt otoutdate,CONVERT(aa.otindt,time) otintime,CONVERT(aa.otoutdt,time) otouttime
+        from (
+        select b.compcode,b.typee,b.empmaid,b.empid,b.docdate,
+        case when b.q1 = 0 and b.q2 = 0  then 
+        timestamp(timestampadd(HOUR,(round(8/2,2) ),timestampadd(SECOND,a.suftime,timestamp(concat(b.docdate,' ',(select a.intime from gtcompmast a where a.compcode = p_unit))))))         
+        when b.q1 = 0  then 
+        timestamp(timestampadd(HOUR,(round(8/4,2) ),timestampadd(SECOND,a.suftime,timestamp(concat(b.docdate,' ',(select a.intime from gtcompmast a where a.compcode = p_unit)))))) 
+        else
+		timestamp(timestampadd(SECOND,(a.suftime + dense_rank() over(order by b.typee ) + 
+        case when mod(b.empid,2) = 0 then dense_rank() over(partition by b.deptname order by b.deptname,b.empid )+2  else 
+        dense_rank() over(partition by b.designation order by b.designation,b.empid ) end),timestamp(concat(b.docdate,' ',(select a.intime from gtcompmast a where a.compcode = p_unit)))))
+        end indt,
+        case when b.q3 = 0 and b.q4 = 0  then
+        timestamp(timestampadd(HOUR,((0-round(8/2,2))),timestampadd(SECOND,a.suftime,timestamp(concat(b.docdate,' ',(select a.outtime from gtcompmast a where a.compcode = p_unit)))))) 
+        when b.q4 = 0 then
+        timestamp(timestampadd(HOUR,((0-round(8/4,2))),timestampadd(SECOND,a.suftime,timestamp(concat(b.docdate,' ',(select a.outtime from gtcompmast a where a.compcode = p_unit))))))
+        else 
+		timestamp(timestampadd(SECOND,(
+        case when mod(day(b.docdate),2) = 0 then case when mod(b.empid,2) = 0 then a.suftime + dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime - dense_rank() over(order by b.shift ) + dense_rank() over(partition by b.deptname order by b.deptname,b.empid )+90  
+        end else case when mod(b.empid,2) = 0 then a.suftime + dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime - dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.deptname order by b.deptname,b.empid )+27  
+        end end
+        )+2,timestamp(concat(b.docdate,' ',(select a.outtime from gtcompmast a where a.compcode = p_unit))))) 
+        end outdt,
+        case when b.ot > 0 then
+		timestamp(timestampadd(SECOND,(
+        case when mod(day(b.docdate),2) = 0 then case when mod(b.empid,2) = 0 then a.suftime+ (15*60)+ dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime+ (15*60) - dense_rank() over(order by b.shift ) + dense_rank() over(partition by b.deptname order by b.deptname,b.empid )+30  end
+        else case when mod(b.empid,2) = 0 then a.suftime+ (15*60)- dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime+ (15*60) + dense_rank() over(order by b.shift ) - dense_rank() over(partition by b.deptname order by b.deptname,b.empid )-25  end end ),
+        timestamp(concat(b.docdate,' ',(select a.outtime from gtcompmast a where a.compcode = p_unit))))) 
+        end otindt,
+        case when b.ot > 0 then
+		timestamp(timestampadd(SECOND,(		
+        case when mod(day(b.docdate),2) = 0 then case when mod(b.empid,2) = 0 then a.suftime+ (15*60)+( IFNULL(b.ot,0)*60*60 ) - dense_rank() over(order by b.empid ) + dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime+ (15*60)+( IFNULL(b.ot,0)*60*60 ) + dense_rank() over(order by b.empid ) - dense_rank() over(partition by b.deptname order by b.deptname,b.empid )+15  end
+        else case when mod(b.empid,2) = 0 then a.suftime+ (15*60)+( IFNULL(b.ot,0)*60*60 ) - dense_rank() over(order by b.empid ) + dense_rank() over(partition by b.designation order by b.designation,b.empid ) else 
+        a.suftime+ (15*60)+( IFNULL(b.ot,0)*60*60 ) + dense_rank() over(order by b.empid ) - dense_rank() over(partition by b.deptname order by b.deptname,b.empid )-60  end end 
+        ),
+        timestamp(concat(b.docdate,' ',(select a.outtime from gtcompmast a where a.compcode = p_unit))))) 
+        end otoutdt
+        from hrsuftimedet a,pldattabk b,hrsuftime c 
+        where a.HrSufTimeid = c.HrSufTimeid  and concat(a.ddate,c.month) = concat(DAY(b.docdate),MONTHNAME(b.docdate)) and b.payperiod  = p_payperiod  
+        and IFNULL(b.intime,'null') = 'null'  
+        and b.shiftcnt  > 0     
+        ) aa) aa         
+        );
+       
+       update pldattabk aa set 
+        aa.indt = (select a.indt  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid ) 
+         where aa.payperiod = p_payperiod and IFNULL(aa.intime,'null') = 'null' ;
+        
+        update pldattabk aa set aa.intime = (select a.intime  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid )
+         where aa.payperiod = p_payperiod and IFNULL(aa.intime,'null') = 'null' ;
+        
+        update pldattabk aa set aa.outdt = (select a.outdt  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid ) 
+         where aa.payperiod = p_payperiod and IFNULL(aa.outtime,'null') = 'null' ;
+        
+        update pldattabk aa set aa.outtime = (select a.outtime  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid )
+         where aa.payperiod = p_payperiod and IFNULL(aa.outtime,'null') = 'null' ;
+        
+        update pldattabk aa set 
+        aa.otindate = (select a.otindate  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid ) 
+         where aa.payperiod = p_payperiod and IFNULL(aa.otindate,'null') = 'null' ;
+        
+        update pldattabk aa set aa.otintime = (select a.otintime  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid )
+         where aa.payperiod = p_payperiod and IFNULL(aa.otintime,'null') = 'null' ;
+        
+        update pldattabk aa set aa.otoutdate = (select a.otoutdate  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid ) 
+         where aa.payperiod = p_payperiod and IFNULL(aa.otoutdate,'null') = 'null' ;
+        
+        update pldattabk aa set aa.otouttime = (select a.otouttime  from plbsddatta a where  
+         a.docdate = aa.docdate  and a.empid = aa.empid )
+         where aa.payperiod = p_payperiod and IFNULL(aa.otouttime,'null') = 'null' ;
+        
+        update pldattabk aa set aa.intime = '-',aa.outtime = '-' where aa.docdate <= aa.doj and aa.intime is null and aa.payperiod = p_payperiod;
+         
+        update pldattabk aa set aa.muster = 'X' where aa.payperiod = p_payperiod and aa.shiftcnt = 1;
+        
+        update pldattabk aa set aa.muster = '/' where aa.payperiod = p_payperiod and aa.shiftcnt = 0.5 and aa.muster is null ;
+        
+        update pldattabk aa set aa.muster = 'WO' where aa.payperiod = p_payperiod and aa.intime = 'WO' and aa.muster is null;        
+        
+        update pldattabk aa set aa.muster = 'NH' where aa.payperiod = p_payperiod and aa.intime = 'NH' and aa.muster is null; 
+       
+       update pldattabk aa set aa.muster = '-' where aa.payperiod = p_payperiod and aa.intime = '-' and aa.muster is null; 
+        
+        update pldattabk aa set aa.muster = 'L' where aa.payperiod = p_payperiod and aa.eleave > 0 and aa.muster is null;
+        
+        update pldattabk aa set aa.muster = 'A' where aa.payperiod = p_payperiod and aa.muster is null;
+        
+         insert into pldatta select * from pldattabk a;        
+        
+        commit;	
+	   
+	END;
+	
+end

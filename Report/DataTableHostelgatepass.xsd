@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataTableHostelgatepass" targetNamespace="http://tempuri.org/DataTableHostelgatepass.xsd" xmlns:mstns="http://tempuri.org/DataTableHostelgatepass.xsd" xmlns="http://tempuri.org/DataTableHostelgatepass.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataTableHostelgatepass" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataTableHostelgatepass" msprop:Generator_UserDSName="DataTableHostelgatepass">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSHostelGatepass" msprop:Generator_TableClassName="DSHostelGatepassDataTable" msprop:Generator_TableVarName="tableDSHostelGatepass" msprop:Generator_TablePropName="DSHostelGatepass" msprop:Generator_RowDeletingName="DSHostelGatepassRowDeleting" msprop:Generator_RowChangingName="DSHostelGatepassRowChanging" msprop:Generator_RowEvHandlerName="DSHostelGatepassRowChangeEventHandler" msprop:Generator_RowDeletedName="DSHostelGatepassRowDeleted" msprop:Generator_UserTableName="DSHostelGatepass" msprop:Generator_RowChangedName="DSHostelGatepassRowChanged" msprop:Generator_RowEvArgName="DSHostelGatepassRowChangeEvent" msprop:Generator_RowClassName="DSHostelGatepassRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HOSTELGATEPASSID" msprop:Generator_ColumnVarNameInTable="columnHOSTELGATEPASSID" msprop:Generator_ColumnPropNameInRow="HOSTELGATEPASSID" msprop:Generator_ColumnPropNameInTable="HOSTELGATEPASSIDColumn" msprop:Generator_UserColumnName="HOSTELGATEPASSID" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPCODE" msprop:Generator_ColumnVarNameInTable="columnCOMPCODE" msprop:Generator_ColumnPropNameInRow="COMPCODE" msprop:Generator_ColumnPropNameInTable="COMPCODEColumn" msprop:Generator_UserColumnName="COMPCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="IDCARDNO" msprop:Generator_ColumnVarNameInTable="columnIDCARDNO" msprop:Generator_ColumnPropNameInRow="IDCARDNO" msprop:Generator_ColumnPropNameInTable="IDCARDNOColumn" msprop:Generator_UserColumnName="IDCARDNO" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPNAME" msprop:Generator_ColumnVarNameInTable="columnEMPNAME" msprop:Generator_ColumnPropNameInRow="EMPNAME" msprop:Generator_ColumnPropNameInTable="EMPNAMEColumn" msprop:Generator_UserColumnName="EMPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPARTMENT" msprop:Generator_ColumnVarNameInTable="columnDEPARTMENT" msprop:Generator_ColumnPropNameInRow="DEPARTMENT" msprop:Generator_ColumnPropNameInTable="DEPARTMENTColumn" msprop:Generator_UserColumnName="DEPARTMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTACT" msprop:Generator_ColumnVarNameInTable="columnCONTACT" msprop:Generator_ColumnPropNameInRow="CONTACT" msprop:Generator_ColumnPropNameInTable="CONTACTColumn" msprop:Generator_UserColumnName="CONTACT" type="xs:string" minOccurs="0" />
+              <xs:element name="HOSTELNAME" msprop:Generator_ColumnVarNameInTable="columnHOSTELNAME" msprop:Generator_ColumnPropNameInRow="HOSTELNAME" msprop:Generator_ColumnPropNameInTable="HOSTELNAMEColumn" msprop:Generator_UserColumnName="HOSTELNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="HOSTELBLOCK" msprop:Generator_ColumnVarNameInTable="columnHOSTELBLOCK" msprop:Generator_ColumnPropNameInRow="HOSTELBLOCK" msprop:Generator_ColumnPropNameInTable="HOSTELBLOCKColumn" msprop:Generator_UserColumnName="HOSTELBLOCK" type="xs:string" minOccurs="0" />
+              <xs:element name="HOSTELROOM" msprop:Generator_ColumnVarNameInTable="columnHOSTELROOM" msprop:Generator_ColumnPropNameInRow="HOSTELROOM" msprop:Generator_ColumnPropNameInTable="HOSTELROOMColumn" msprop:Generator_UserColumnName="HOSTELROOM" type="xs:string" minOccurs="0" />
+              <xs:element name="REASON" msprop:Generator_ColumnVarNameInTable="columnREASON" msprop:Generator_ColumnPropNameInRow="REASON" msprop:Generator_ColumnPropNameInTable="REASONColumn" msprop:Generator_UserColumnName="REASON" type="xs:string" minOccurs="0" />
+              <xs:element name="PERMISSIONHRS" msprop:Generator_ColumnVarNameInTable="columnPERMISSIONHRS" msprop:Generator_ColumnPropNameInRow="PERMISSIONHRS" msprop:Generator_ColumnPropNameInTable="PERMISSIONHRSColumn" msprop:Generator_UserColumnName="PERMISSIONHRS" type="xs:string" minOccurs="0" />
+              <xs:element name="SYSTEMDATE" msprop:Generator_ColumnVarNameInTable="columnSYSTEMDATE" msprop:Generator_ColumnPropNameInRow="SYSTEMDATE" msprop:Generator_ColumnPropNameInTable="SYSTEMDATEColumn" msprop:Generator_UserColumnName="SYSTEMDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="QRCODE" msprop:Generator_ColumnVarNameInTable="columnQRCODE" msprop:Generator_ColumnPropNameInRow="QRCODE" msprop:Generator_ColumnPropNameInTable="QRCODEColumn" msprop:Generator_UserColumnName="QRCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPIMAGE" msprop:Generator_ColumnVarNameInTable="columnEMPIMAGE" msprop:Generator_ColumnPropNameInRow="EMPIMAGE" msprop:Generator_ColumnPropNameInTable="EMPIMAGEColumn" msprop:Generator_UserColumnName="EMPIMAGE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

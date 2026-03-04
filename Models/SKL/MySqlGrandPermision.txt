@@ -1,0 +1,12 @@
+﻿GRANT ALL  PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+CREATE USER 'root'@'%' IDENTIFIED BY 'cfm123';
+
+FLUSH PRIVILEGES;
+
+
+CREATE USER 'psskle'@'192.168.101.15' IDENTIFIED WITH mysql_native_password BY 'Password@123';
+
+GRANT ALL ON `psskle`.* TO 'psskle'@'192.168.101.15';
+
+FLUSH PRIVILEGES;
